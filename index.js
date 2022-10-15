@@ -1,0 +1,25 @@
+const bgBtn = document.querySelector(".bg-display");
+const mainBtn = document.querySelector(".main-display");
+const clearBtn = document.querySelector(".clear");
+const ceBtn = document.querySelector(".ce");
+const equalsBtn = document.querySelector("equals");
+const oneBtn = document.querySelector(".one");
+const twoBtn = document.querySelector(".two");
+const threeBtn = document.querySelector(".three");
+const fourBtn = document.querySelector(".four");
+const fiveBtn = document.querySelector(".five");
+const sixBtn = document.querySelector(".six");
+const sevenBtn = document.querySelector(".seven");
+const eightBtn = document.querySelector(".eight");
+const nineBtn = document.querySelector(".nine");
+const zeroBtn = document.querySelector(".zero");
+const decimalBtn = document.querySelector(".period");
+const multiplyBtn = document.querySelector(".multiply");
+const divideBtn = document.querySelector(".divide");
+const subtractBtn = document.querySelector(".subtract");
+const addBtn = document.querySelector(".add");
+
+const add = (a, b) => a + b;
+const subtract = (a, b) => a - b;
+const mutliply = (a, b) => a * b;
+const divide = (a, b) => a / b;

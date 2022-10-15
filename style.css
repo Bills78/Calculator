@@ -8,6 +8,7 @@ body {
   border: 2px solid black;
   padding: 1.5em;
   background-color: #606c38;
+  border-radius: 10px;
 }
 
 .display {
@@ -23,19 +24,20 @@ body {
 }
 
 button {
-  font-size: 14px;
+  font-size: 15px;
   height: 45px;
   width: 40px;
   margin: 5px;
   background-color: #bc6c25;
   border-radius: 10px;
-  border: none;
+  border: 1px solid #283618;
   color: #fefae0;
 }
 
 button:active {
   background-color: #dda15e;
-  border: 2px solid #bc6c25;
+  border: 1px solid #bc6c25;
+  color: #283618;
 }
 
 .buttons {
