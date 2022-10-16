@@ -64,7 +64,14 @@ const numEventCreator = (btn) => {
 
 const opEventCreator = (btn) => {
   btn.addEventListener("click", (e) => {
-    mainDisplay.textContent = `${mainDisplay.textContent} ${e.target.textContent} `;
+    const lastVal = mainDisplay.textContent.split(" ").at(-1);
+    if (lastVal == "") {
+      let freshArr = mainDisplay.textContent.split(" ");
+      freshArr.splice(-2, 1, e.target.textContent);
+      mainDisplay.textContent = freshArr.join(" ");
+    } else {
+      mainDisplay.textContent = `${mainDisplay.textContent} ${e.target.textContent} `;
+    }
   });
 };
 
@@ -72,3 +79,11 @@ numBtnArr.forEach((btn) => numEventCreator(btn));
 opBtnArr.forEach((btn) => opEventCreator(btn));
 
 //Clear, CE
+clearBtn.addEventListener("click", () => {
+  mainDisplay.textContent = "";
+  bgDisplay.textContent = "";
+});
+
+ceBtn.addEventListener("click", () => {
+  mainDisplay.textContent = "";
+});
