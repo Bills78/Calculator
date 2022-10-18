@@ -63,3 +63,7 @@ button:active {
 .bg-display {
   margin: 1em;
 }
+
+*:focus {
+  outline: none;
+}
